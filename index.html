@@ -5,29 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        li {
+            border: rgb(226, 86, 43) solid 3px;
+            padding: 5px;
+        }
+        h1 {
+            color: chocolate;
+        }
+        p {
+            text-align: center;
+        }
+        .content {
+            color: green
+        }
+        article .content {
+            border: 1px dashed purple;
+            padding: 15px;
+        }
+        body {
+            background-color:skyblue;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+             height: auto;
+        }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+    </style>
 </head>
 <body>
     <header>
-        <h1>Here is my header.</h1>
+        <h1>Monkey Business.</h1>
         <a href="about.html">About me</a>
+        <br>
+        <br>
         <a href="http://lmgtfy.com/?q=Monkeys+are+a+danger+to+humanity">Let me google that for you...</a>
     </header>
 
     <main>
+       <br>
+       <br>
         <a href="#monkey list">Go right to the problem.</a>
-        <p class="content">This is a <strong>paragraph.</strong></p>
-        <p class="content"><em>There will be many more to come...</em></p>
-        <p><strike>Who hates monkeys?</strike></p>
+        <br>
+        <a href="#warning">Move to the main warning.</a>
+        <br>
+        <article>
+            <p class="content">This is a <strong>paragraph.</strong></p>
+            <p class="content"><em>There will be many more to come...</em></p>
+            <p><strike>Who hates monkeys?</strike></p>
+        </article>
         <hr>
-        <p>Time for an image:</p>
-        <img src="https://vignette.wikia.nocookie.net/planetoftheapes/images/a/a3/Zaius_1.jpg/revision/latest?cb=20061026182657">
+        <p>Main monkey actors:</p>
+       
+        <div class="gallery">
+            <a target="_blank" href="https://vignette.wikia.nocookie.net/planetoftheapes/images/a/a3/Zaius_1.jpg/revision/latest?cb=20061026182657">
+            <img src="https://vignette.wikia.nocookie.net/planetoftheapes/images/a/a3/Zaius_1.jpg/revision/latest?cb=20061026182657" alt="evil monkey" width="300" height="200">
+            </a>
+            <div class="desc">Example of an evil Ape</div>
+        </div>
+            
+
         <ul id="monkey list">
             <li>Scientist Monkeys </li>
             <li>Astronaut Monkeys</li>
             <li>Curious George</li>
         </ul>    
-        <p>In all seriousness, monkeys are terrifying, horrible creatures; abominations of nature gifted with an intelligence and strengh that is not tempered by reason.</p>
-        <p><h2>Please warn your loved ones of the monkey threat.</h2></p>
+        <br>
+        <hr>
+        <br>
+        <p id="warning">In all seriousness, monkeys are terrifying, horrible creatures; abominations of nature gifted with an intelligence and strengh that is not tempered by reason.</p>
+        <p class="content">Please warn your loved ones of the monkey threat.</p>
 
     </main>
 
